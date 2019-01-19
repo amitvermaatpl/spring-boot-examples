@@ -1,0 +1,24 @@
+#####==## Project Setup #####==##
+1. First configure DB details in application properties.
+2. Create DB Schema and Tables.
+
+-- Create table
+create table BANK_ACCOUNT
+(
+  ID        NUMBER(19,1) not null,
+  FULL_NAME VARCHAR(128) not null,
+  BALANCE   DOUBLE PRECISION not null
+) ;
+--
+alter table BANK_ACCOUNT
+  add constraint BANK_ACCOUNT_PK primary key (ID); 
+ 
+Insert into Bank_Account(ID, Full_Name, Balance) values (1, 'Amit', 1000);
+Insert into Bank_Account(ID, Full_Name, Balance) values (2, 'Ravi', 2000);
+Insert into Bank_Account(ID, Full_Name, Balance) values (3, 'John', 3000);
+
+3. In  JPA (or  Hibernate), Entity is a representive class (corresponding to) a table in a database. 
+   The fields of this class will correspond to the columns of the table.
+   
+   We will create a  BankAccount class to represent for the  BANK_ACCOUNT in the database. JPA Annotations will 
+   be used to annotate on the fields to describe mappings between the fields and the columns of the table.
