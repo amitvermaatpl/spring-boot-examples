@@ -22,3 +22,6 @@ Insert into Bank_Account(ID, Full_Name, Balance) values (3, 'John', 3000);
    
    We will create a  BankAccount class to represent for the  BANK_ACCOUNT in the database. JPA Annotations will 
    be used to annotate on the fields to describe mappings between the fields and the columns of the table.
+   
+### REFRENCE ###
+https://o7planning.org/en/11661/spring-boot-jpa-and-spring-transaction-tutorial
