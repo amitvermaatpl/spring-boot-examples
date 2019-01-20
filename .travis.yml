@@ -6,4 +6,4 @@ script:
 - ./springboot-cache/mvnw clean install
 
 before_install:
-  - chmod +x mvnw
+  - chmod +x springboot-cache
