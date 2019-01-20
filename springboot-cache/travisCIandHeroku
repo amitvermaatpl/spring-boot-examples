@@ -1,4 +1,4 @@
-###==## AUTOMATION ###==##
+###==##  AUTOMATION: Travis CI  ###==##
 Step-1: Sign in to the page-> Travis CI with GitHub Credentials.
 
 Step-2: In Travis CI -> Repository activate the repo for which you want automated build.
