@@ -1,0 +1,6 @@
+###==## AUTOMATION ###==##
+Step-1: Sign in to the page-> Travis CI with GitHub Credentials.
+
+Step-2: In Travis CI -> Repository activate the repo for which you want automated build.
+
+Step-3: In your project create a .travis.yml file
