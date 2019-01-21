@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spring.jpa</groupId>
-	<artifactId>springboot-cache</artifactId>
+	<artifactId>springboot-jpa-cache</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-cache</name>
 	<description>Spring Boot Cache</description>
