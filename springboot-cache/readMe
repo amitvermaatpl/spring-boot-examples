@@ -20,7 +20,7 @@ user requests the data.
 Now, test with url GET: http://localhost:8080/student/1
 
 First Time : it will take time and print "sleep for 5 secs...."
-Next hit, same url: return from cache.
+Next hit, same url: NO log prints, means return from cache .
 
 Now, hit the url PUT: http://localhost:8080/student/1     [It evicts the cache]
 If you gain hit the url GET: http://localhost:8080/student/1  [Again it will take 5sec, bcoz cache cleared by cache evict.]
@@ -28,6 +28,7 @@ If you gain hit the url GET: http://localhost:8080/student/1  [Again it will tak
 ###==## EH-CACHE: Reference ###==##
 1. https://memorynotfound.com/spring-boot-ehcache-2-caching-example-configuration/
 2. https://www.onlinetutorialspoint.com/spring-boot/spring-boot-ehcache-example.html
+3. https://medium.com/@mahmoud.romeh_25104/spring-boot-with-ehcache-3-and-jsr-107-d0bc1eb47b2d
 
 #####==### REFRENCE #####==##
 1. https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/  

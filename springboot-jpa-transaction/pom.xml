@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spring.jpa</groupId>
-	<artifactId>springboot-jpa</artifactId>
+	<artifactId>springboot-jpa-transaction</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-jpa-transaction</name>
 	<description>Spring Boot + JPA + Transaction</description>
