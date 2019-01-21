@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spring.jpa</groupId>
-	<artifactId>spring-jpa-locking</artifactId>
+	<artifactId>springboot-jpa-locking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-jpa-locking</name>
 	<description>Spring Boot + Locking + Loading</description>
