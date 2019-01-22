@@ -1,0 +1,76 @@
+TEST the REST API
+http://localhost:9080/hello/Amit
+
+## CONCEPT ##
+These standalone executable packages are called docker images. And a running instance of a docker image is 
+called a docker container.
+
+DockerFile: The first step is to configure the files required for Docker to build itself an image. Docker Images 
+are simply blueprints of environments that you want to create while containers are the actual running and functional
+environments.
+
+### Steps to use docker ###
+1. Install docker in your machine.
+2. Create a spring boot rest api project.
+
+3. Create a file named Dockerfile in the project root directory.
+   This is used by Docker while creating the image. It is basically declaring the Java runtime information
+   and target distributions.
+   
+4. Add two maven plugins in the pom.xml file so that we can use the Docker related maven commands while creating
+   the instance. Those plugins are dockerfile-maven-plugin and maven-dependency-plugin.
+   
+5. Create a docker image from dockerfile.
+   > Now use maven command mvn clean install dockerfile:build to create docker image.
+   
+   > In docker quickstart terminal go to project location like-
+     cd "C:\Users\IBM_ADMIN\Desktop\my github\springboot-docker-hello\springboot-docker" 
+     
+   > And then run- mvn clean install dockerfile:build
+   
+4. Deploy and Run Docker Image.
+   So we have created the Docker Image (i.e. hello-docker-0.0.1-SNAPSHOT-docker-info.jar). We also have a installed
+   docker container running in our local machine.
+
+   Now, to run the docker image inside installed docker container, we will use below command.
+   
+5. Run the image
+   > In Docker Container(QuickStart Terminal) run below command to check your image-
+     docker image ls
+   > My docker image name is:- springio/hello-docker
+   > Run the image in container:-  docker run -p 8090:9080 springio/hello-docker
+   
+   > URL to test it outside Docker container.: http://192.168.99.100:8090/hello/Amit
+   
+6. STOP the container
+   We can list down all docker containers by command * docker container ps * in the terminal and we can use command
+   docker stop <container ID>
+
+7. Publish the image in Docker-Hub
+
+   > Logging with your dockerId
+     docker login
+     
+   > TAG the image: docker tag 'image' username/repository:tag  [repository: project name=springboot-docker]
+     docker tag springio/hello-docker amitverma75741/springboot-docker:0.0.1-SNAPSHOT
+   
+   > Check the image using command: docker image ls
+   
+   > Publish the image in dockerHub
+     docker push amitverma75741/springboot-docker:0.0.1-SNAPSHOT
+   
+   > Pulling the image from docker hub and running it: Just you need docker on your machine.
+     docker run -p 8090:9080 amitverma75741/springboot-docker:0.0.1-SNAPSHOT
+     
+     The docker run command pulls the image from docker hub if it is not available locally, and then runs it.
+     NOTE: Actual port is 9080, but for your local OS it is 8090
+   
+### Reference ###
+https://howtodoinjava.com/docker/docker-hello-world-example/
+https://www.callicoder.com/spring-boot-docker-example/
+https://spring.io/guides/gs/spring-boot-docker/
+
+### EXAMPLES on BOOT & REST ###
+https://github.com/in28minutes/spring-boot-examples/
+   
+   
