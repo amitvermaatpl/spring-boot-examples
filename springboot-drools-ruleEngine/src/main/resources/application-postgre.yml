@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    username: admin
+    password: CJWLMYSVIJCTVSKG
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://sl-eu-lon-2-portal.9.dblayer.com:27525/compose
+    hikari:
+      maximum-pool-size: 2
+      idle-timeout: 5000
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        default_schema: prototypemora
+    hibernate:
+      ddl-auto: update

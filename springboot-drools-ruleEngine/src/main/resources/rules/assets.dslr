@@ -1,0 +1,26 @@
+package com.ibm.demo.rule
+expander assets.dsl
+
+rule "Eligiblity R1 - Select all financial instruments where currency is x1, rating is AAA or AA, issuer is 1 and portfolio is 1" salience 10
+lock-on-active
+    when
+        Assets with
+        - currency "x1"
+        - rating "AAA", "AA"
+        - institution "1"
+        - portfolio "1"
+        - snapshotdate "15-JUNE-2018"
+    then
+        Display
+end
+rule "Calculation of Issuer limit for R1" salience 5
+    when
+        assets are eligible
+    then
+        Calculate issuer limit
+        Is max limit exceeded
+        Is total nominal exceeded
+        Display2
+end
+
+

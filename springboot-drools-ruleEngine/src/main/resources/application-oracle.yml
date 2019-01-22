@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    username: prototypemora
+    password: password
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1522:XE
+    
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    show-sql: true      
+    hibernate:
+      ddl-auto: update
