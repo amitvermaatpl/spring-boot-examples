@@ -56,7 +56,7 @@ environments.
    
    > Check the image using command: docker image ls
    
-   > Publish the image in dockerHub
+   > Publish the image in dockerHub[30xx..xxD...]
      docker push amitverma75741/springboot-docker:0.0.1-SNAPSHOT
    
    > Pulling the image from docker hub and running it: Just you need docker on your machine.
