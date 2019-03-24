@@ -1,0 +1,13 @@
+This is very basic example of Spring-Security.
+
+1. Just create a spring boot project with Security starter.
+2. And start the application java.
+
+3. Default login pages comes up, check password in console log with user= user. [Spring Security - USER Object]
+
+4. We can over-ride the default security features as per our requirement. 
+
+
+READ Spring-Security API Details:
+https://www.infoq.com/profile/Rob-Winch
+
