@@ -41,6 +41,7 @@ environments.
    > Run the image in container:-  docker run -p 8090:9080 springio/hello-docker
    
    > URL to test it outside Docker container.: http://192.168.99.100:8090/hello/Amit
+     [NOTE: Please check the IP of docker and change it in URL]
    
 6. STOP the container
    We can list down all docker containers by command * docker container ps * in the terminal and we can use command
@@ -61,6 +62,10 @@ environments.
    
    > Pulling the image from docker hub and running it: Just you need docker on your machine.
      docker run -p 8090:9080 amitverma75741/springboot-docker:0.0.1-SNAPSHOT
+     
+     OR
+     
+     docker run -p 8090:9080 amitverma75741/springboot-docker:0.0.2-SNAPSHOT
      
      The docker run command pulls the image from docker hub if it is not available locally, and then runs it.
      NOTE: Actual port is 9080, but for your local OS it is 8090
