@@ -1,3 +1,4 @@
+=============== MONGO-DB ================
 > db
 test
 > show dbs
@@ -22,6 +23,8 @@ on this example we will build a new image on every mvn package .
 STEP-2:Add DockerFile in project
 
 STEP-3: Add docker-compose.yml
+
+===== REFRENCES ======
 
 https://medium.com/@volmar.oliveira.jr/a-restapi-using-spring-boot-mongodb-running-on-docker-containers-5e530b48f45e
 

@@ -55,7 +55,8 @@ public class K8sServiceImpl {
 		String serviceUrl="";
 		
 		if(nodePort!=null) {
-			serviceUrl=minikubeIp+nodePort+"/demo/swagger-ui.html#";  // *** WE need to store SWAGGER URL Only ***// LOGIC need to be changed //
+			// *** WE need to store SWAGGER URL Only ***// LOGIC need to be changed //
+			serviceUrl=minikubeIp+nodePort+"/demo/swagger-ui.html#";  
 			
 			service.setIsMicroservice("false"); // TODO: Need to be changed //
 	       	service.setNamespace(svc.getMetadata().getNamespace());
