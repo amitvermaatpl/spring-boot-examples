@@ -31,4 +31,22 @@ public class HelloDockerRestController {
         return response;
  
     }
+    
+    @ApiOperation(value = "Prints welcome message for admin.", response = String.class)
+    @GetMapping("/hello")
+    public String helloK8() {
+        String response = "Hello Admin, response received on :"+ new Date();
+        System.out.println(response);
+        return response;
+ 
+    }
+    
+    @ApiOperation(value = "Prints dummy welcome message.", response = String.class)
+    @GetMapping("/")
+    public String helloUniverse() {
+        String response = "Hello Universe, response received on :"+ new Date();
+        System.out.println(response);
+        return response;
+ 
+    }
 }

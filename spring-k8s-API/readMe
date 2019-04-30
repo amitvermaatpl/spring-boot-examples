@@ -1,0 +1,28 @@
+> db
+test
+> show dbs
+admin    0.000GB
+config   0.000GB
+local    0.000GB
+swagger  0.000GB
+> db
+test
+> use minikube
+switched to db minikube
+> db
+minikube
+> db.createCollection("K8Service");
+{ "ok" : 1 }
+
+============= ADDING DOCKER ===========
+STEP-1: Add docker plugin in maven(pom.xml)
+docker maven plugin we are able to build a new image and publish if it is the case during Maven pipeline,
+on this example we will build a new image on every mvn package .
+
+STEP-2:Add DockerFile in project
+
+STEP-3: Add docker-compose.yml
+
+https://medium.com/@volmar.oliveira.jr/a-restapi-using-spring-boot-mongodb-running-on-docker-containers-5e530b48f45e
+
+https://dzone.com/articles/deploying-spring-boot-and-mongodb-as-containers-us-1

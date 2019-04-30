@@ -1,0 +1,27 @@
+# Start with a base image containing Java runtime: A docker image can use another image available in the docker registry as its base or parent image. # 
+FROM openjdk:8-jdk-alpine
+
+# Add Maintainer Info [Not mandatory]
+LABEL maintainer="amitverma75741@gmail.com"
+
+# Add a volume pointing to /tmp #
+VOLUME /tmp
+
+# The application's jar file #
+ARG JAR_FILE=target/spring-k8s-API-0.0.1-SNAPSHOT.jar
+
+# Add the application's jar to the container #
+ADD ${JAR_FILE} kube-api-app.jar
+
+#ADD target/spring-k8s-API-0.0.1-SNAPSHOT.jar kube-api-app.jar
+
+# Entry Point: Run the jar file, This is where you configure how the application is executed inside the container. #
+ENV JAVA_OPTS=""
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /kube-api-app.jar" ]
+
+# SAMPLE
+#FROM openjdk:8-jdk-alpine
+#VOLUME /tmp
+#ARG JAR_FILE
+#COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]

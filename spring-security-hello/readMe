@@ -1,9 +1,12 @@
+TODO
+http://websystique.com/spring-security/spring-security-4-password-encoder-bcrypt-example-with-hibernate/
+
 ### Override the default security features as per our requirement.  ###
 
 Complete Course on Spring-Security: CERTIFICATION
 https://www.baeldung.com/learn-spring-security-course
 
-Example: https://spring.io/guides/gs/securing-web/#initial
+This EXAMPLE id from: https://spring.io/guides/gs/securing-web/#initial
 1. Create a unsecured web-application then
 2. Secure it with spring security
    > https://docs.spring.io/spring-security/site/docs/current/guides/html5/helloworld-boot.html

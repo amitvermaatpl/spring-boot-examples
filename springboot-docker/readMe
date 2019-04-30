@@ -77,5 +77,9 @@ https://spring.io/guides/gs/spring-boot-docker/
 
 ### EXAMPLES on BOOT & REST ###
 https://github.com/in28minutes/spring-boot-examples/
+
+### ADD Swagger ###
+> Add swagger + APIinfo, using below link
+> https://dzone.com/articles/spring-boot-2-restful-api-documentation-with-swagg
    
    
